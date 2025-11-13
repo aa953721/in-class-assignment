@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#11998e"/>
+      <stop offset="100%" stop-color="#38ef7d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <g stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round">
+    <rect x="260" y="150" width="280" height="160" rx="16"/>
+    <line x1="300" y1="330" x2="500" y2="330"/>
+    <circle cx="310" cy="210" r="10" fill="#fff"/>
+    <circle cx="360" cy="210" r="10" fill="#fff"/>
+    <circle cx="410" cy="210" r="10" fill="#fff"/>
+  </g>
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="700">Technology</text>
+</svg>

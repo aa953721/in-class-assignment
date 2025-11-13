@@ -4,20 +4,83 @@ const qText=document.getElementById('questionText');
 const answersEl=document.getElementById('answers');
 const nextBtn=document.getElementById('nextBtn');
 const qNumberEl=document.getElementById('qNumber');
+const balanceValueEl=document.getElementById('balanceValue');
 
 if(!genre||!QUESTION_BANK[genre]){window.location.replace('index.html');}
 else{titleEl.textContent=`${genre} Quiz`;}
+// Set genre image on quiz page
+const quizImgEl=document.getElementById('quizGenreImage');
+if(quizImgEl){
+	const path=(typeof genreImagePath==='function')?genreImagePath(genre):localStorage.getItem('selectedGenreImage');
+	if(path){quizImgEl.src=path; quizImgEl.alt=genre;}
+}
 
-const questions=[...(QUESTION_BANK[genre]||[])];
-// Shuffle questions and take 5
-for(let i=questions.length-1;i>0;i--){const j=Math.floor(Math.random()* (i+1));[questions[i],questions[j]]=[questions[j],questions[i]];}
-const selected=questions.slice(0,5);
-let current=0;let score=0;let answered=false;
+// Balance system
+let balance=parseInt(localStorage.getItem('balance')||'1000',10);
+function updateBalanceDisplay(){balanceValueEl.textContent=balance.toLocaleString();}
+updateBalanceDisplay();
 
-function renderQuestion(){answered=false;nextBtn.classList.add('hidden');const q=selected[current];qText.textContent=q.question;qNumberEl.textContent=current+1;answersEl.innerHTML='';q.choices.forEach((choice,i)=>{const btn=document.createElement('button');btn.textContent=choice;btn.addEventListener('click',()=>handleAnswer(i));answersEl.appendChild(btn);});}
+// Build or load remaining question indices for this genre
+const allQs=[...(QUESTION_BANK[genre]||[])];
+function shuffle(arr){for(let i=arr.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[arr[i],arr[j]]=[arr[j],arr[i]];}return arr;}
+const remainingKey=`remaining_${genre}`;
+let remaining=JSON.parse(localStorage.getItem(remainingKey)||'null');
+if(!Array.isArray(remaining)){
+	remaining=shuffle(Array.from({length:allQs.length},(_,i)=>i));
+}
 
-function handleAnswer(index){if(answered)return;answered=true;const q=selected[current];const buttons=[...answersEl.querySelectorAll('button')];buttons.forEach((b,i)=>{if(i===q.answer){b.classList.add('correct');}else if(i===index){b.classList.add('incorrect');}b.disabled=true;});if(index===q.answer)score++;nextBtn.classList.remove('hidden');if(current===selected.length-1){nextBtn.textContent='Finish';}}
+let currentIndex=null;let answered=false;let questionCount=parseInt(localStorage.getItem('questionCount')||'0',10);
 
-nextBtn.addEventListener('click',()=>{if(!answered)return;if(current<selected.length-1){current++;renderQuestion();}else{localStorage.setItem('lastScore',String(score));localStorage.setItem('lastTotal',String(selected.length));window.location.href='results.html';}});
+function nextQuestion(){
+	if(balance>=5000){
+		localStorage.setItem('won','true');
+		localStorage.setItem('finalBalance',String(balance));
+		window.location.href='results.html';
+		return;
+	}
+	if(remaining.length===0){
+		// Out of questions in this genre; send to wheel and exclude this genre
+		localStorage.setItem('excludeGenre',genre);
+		localStorage.setItem('lastGenre',genre);
+		localStorage.setItem('balance',String(balance));
+		localStorage.removeItem('selectedGenre');
+		window.location.href='index.html';
+		return;
+	}
+	answered=false;nextBtn.classList.add('hidden');
+	currentIndex=remaining.shift();
+	localStorage.setItem(remainingKey,JSON.stringify(remaining));
+	const q=allQs[currentIndex];
+	qText.textContent=q.question;
+	qNumberEl.textContent=String(++questionCount);
+	localStorage.setItem('questionCount',String(questionCount));
+	answersEl.innerHTML='';
+	q.choices.forEach((choice,i)=>{
+		const btn=document.createElement('button');
+		btn.textContent=choice;
+		btn.addEventListener('click',()=>handleAnswer(i,q.answer));
+		answersEl.appendChild(btn);
+	});
+}
 
-renderQuestion();
+function handleAnswer(index,correctIdx){
+	if(answered)return;answered=true;
+	const buttons=[...answersEl.querySelectorAll('button')];
+	buttons.forEach((b,i)=>{if(i===correctIdx){b.classList.add('correct');}else if(i===index){b.classList.add('incorrect');}b.disabled=true;});
+	if(index===correctIdx){balance+=500;}else{balance-=500;}
+	localStorage.setItem('balance',String(balance));
+	updateBalanceDisplay();
+	// Lose condition: balance at or below $0 ends the game now
+	if(balance<=0){
+		localStorage.removeItem('won');
+		localStorage.setItem('finalBalance',String(balance));
+		window.location.href='results.html';
+		return;
+	}
+	nextBtn.classList.remove('hidden');
+	nextBtn.textContent='Next';
+}
+
+nextBtn.addEventListener('click',()=>{if(!answered)return;nextQuestion()});
+
+nextQuestion();

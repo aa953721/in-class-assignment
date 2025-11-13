@@ -2,53 +2,63 @@
 // Updated to match wheel genres: "Tv shows","Movies","Holidays","Celebrities","Religion","History","Politics","Music","Technology","Adventure"
 const QUESTION_BANK={
  "Tv shows":[
-  {question:"Which series features the character Walter White?",choices:["Breaking Bad","The Wire","Lost","Friends"],answer:0},
-  {question:"What is the name of the coffee shop in Friends?",choices:["Central Perk","Monk's Cafe","JJ's Diner","Luke's Diner"],answer:0},
-  {question:"Which streaming service released 'Stranger Things'?",choices:["Netflix","Hulu","Amazon Prime Video","Disney+"],answer:0},
-  {question:"The Doctor in 'Doctor Who' is a?",choices:["Time Lord","Jedi","Wizard","Detective"],answer:0},
-  {question:"Which show popularized the phrase 'Winter is coming'?",choices:["Game of Thrones","Vikings","The Last Kingdom","The Witcher"],answer:0}
+  {question:"Which TV show features characters working at Dunder Mifflin?",choices:["Friends","The Office","Brooklyn 99","Parks and Rec"],answer:1},
+  {question:"Who is the main character in \"Stranger Things\"?",choices:["Eleven","Katniss","Hermione","Rey"],answer:0},
+  {question:"Which show is animated?",choices:["Breaking Bad","The Simpsons","Lost","The Crown"],answer:1},
+  {question:"What show is known for the phrase \"Winter is coming\"?",choices:["The Witcher","Game of Thrones","Loki","Manifest"],answer:1},
+  {question:"Which show is about a chemistry teacher turned criminal?",choices:["The Boys","Breaking Bad","Suits","The Flash"],answer:1},
+  {question:"Which show features a group of scientists and their neighbor Penny?",choices:["Community","The Big Bang Theory","Friends","Lost"],answer:1},
+  {question:"Which show is about a teenage girl who hunts vampires?",choices:["Supernatural","Buffy the Vampire Slayer","Charmed","Teen Wolf"],answer:1},
+  {question:"Which TV show has characters named Ross, Rachel, Chandler, Monica, Joey, and Phoebe?",choices:["Friends","The Office","New Girl","Seinfeld"],answer:0},
+  {question:"What show features contestants surviving on an island?",choices:["Survivor","Big Brother","The Voice","Idol"],answer:0},
+  {question:"Which show features a bounty hunter named Din Djarin?",choices:["Loki","The Mandalorian","Andor","The Witcher"],answer:1}
  ],
  "Movies":[
-  {question:"Who directed 'Jurassic Park'?",choices:["Steven Spielberg","James Cameron","Ridley Scott","Peter Jackson"],answer:0},
-  {question:"Which film won Best Picture at the 2020 Oscars?",choices:["Parasite","1917","Joker","Once Upon a Time in Hollywood"],answer:0},
-  {question:"'The Force' is from which franchise?",choices:["Star Wars","Star Trek","Dune","The Matrix"],answer:0},
-  {question:"Which movie features the character Tony Stark?",choices:["Iron Man","Batman Begins","Superman Returns","Deadpool"],answer:0},
-  {question:"Which studio created the Marvel Cinematic Universe (MCU)?",choices:["Marvel Studios","DC Films","Lucasfilm","Pixar"],answer:0}
+  {question:"Which movie features a talking snowman named Olaf?",choices:["Shrek","Frozen","Moana","Tangled"],answer:1},
+  {question:"Who is the main villain in \"The Lion King\"?",choices:["Scar","Jafar","Hades","Thanos"],answer:0},
+  {question:"Which movie includes superheroes teaming up?",choices:["The Avengers","Toy Story","Jaws","The Notebook"],answer:0},
+  {question:"What color pill does Neo take in \"The Matrix\"?",choices:["Green","Blue","Red","Yellow"],answer:2},
+  {question:"Which movie is about a sinking ship?",choices:["Titanic","Cars","Up","Inception"],answer:0},
+  {question:"Which movie features a clown named Pennywise?",choices:["It","Saw","Us","Scream"],answer:0},
+  {question:"Which movie has the line \"To infinity... and beyond!\"?",choices:["Frozen","Toy Story","Cars","Inside Out"],answer:1},
+  {question:"What movie stars a giant gorilla on Skull Island?",choices:["Jurassic Park","King Kong","Godzilla","Tarzan"],answer:1},
+  {question:"Who is the main blue character in Avatar?",choices:["Neytiri","Moana","Mulan","Merida"],answer:0},
+  {question:"Which movie is about time loops?",choices:["Groundhog Day","Titanic","Black Panther","John Wick"],answer:0}
  ],
  "Holidays":[
-  {question:"Which date is New Year's Day in the Gregorian calendar?",choices:["January 1","December 31","July 4","October 31"],answer:0},
-  {question:"Diwali is a festival of?",choices:["Lights","Harvest","Snow","Music"],answer:0},
-  {question:"Which holiday is celebrated on December 25 by many Christians?",choices:["Christmas","Easter","Hanukkah","Ramadan"],answer:0},
-  {question:"Decorated eggs are commonly associated with which holiday?",choices:["Easter","Thanksgiving","Holi","Eid al-Adha"],answer:0},
-  {question:"Which US holiday honors military veterans each November?",choices:["Veterans Day","Memorial Day","Labor Day","Presidents Day"],answer:0}
+  {question:"Which holiday involves decorating a tree?",choices:["Thanksgiving","Christmas","Easter","Halloween"],answer:1},
+  {question:"Which holiday uses carved pumpkins?",choices:["Christmas","Halloween","New Year's","Valentine's Day"],answer:1},
+  {question:"Which holiday celebrates the New Year?",choices:["July 4th","January 1st","March 17th","April 1st"],answer:1},
+  {question:"Which day is known for fireworks in the U.S.?",choices:["Valentine's Day","Easter","Fourth of July","Veterans Day"],answer:2},
+  {question:"Which holiday involves egg hunts?",choices:["Easter","Christmas","Thanksgiving","Memorial Day"],answer:0}
  ],
  "Celebrities":[
-  {question:"Who is known as the 'King of Pop'?",choices:["Michael Jackson","Elvis Presley","Prince","Justin Bieber"],answer:0},
-  {question:"Which actor plays Captain Jack Sparrow?",choices:["Johnny Depp","Tom Hanks","Leonardo DiCaprio","Brad Pitt"],answer:0},
-  {question:"Who sings the 2015 hit 'Hello'?",choices:["Adele","Taylor Swift","Ariana Grande","Rihanna"],answer:0},
-  {question:"Which entrepreneur founded SpaceX?",choices:["Elon Musk","Jeff Bezos","Richard Branson","Bill Gates"],answer:0},
-  {question:"Who portrayed Hermione Granger in the Harry Potter films?",choices:["Emma Watson","Emma Stone","Keira Knightley","Natalie Portman"],answer:0}
+  {question:"Who played Iron Man in the Marvel movies?",choices:["Brad Pitt","Robert Downey Jr.","Tom Cruise","Chris Evans"],answer:1},
+  {question:"Who is known as the \"King of Pop\"?",choices:["Justin Bieber","Michael Jackson","Elvis Presley","Bruno Mars"],answer:1},
+  {question:"Which singer released the song \"Shake It Off\"?",choices:["Ariana Grande","Taylor Swift","Beyonce","Selena Gomez"],answer:1},
+  {question:"Which actor voiced Woody in Toy Story?",choices:["Tom Hanks","Ryan Gosling","Chris Pratt","Adam Sandler"],answer:0},
+  {question:"Who is famous for the \"Rock eyebrow raise\"?",choices:["Chris Hemsworth","The Rock (Dwayne Johnson)","Will Smith","Vin Diesel"],answer:1}
  ],
  "Religion":[
-  {question:"Which text is central to Islam?",choices:["Quran","Torah","Bhagavad Gita","Tripitaka"],answer:0},
-  {question:"Buddhism was founded by Siddhartha Gautama, also known as?",choices:["Buddha","Confucius","Laozi","Mahavira"],answer:0},
-  {question:"Which religion observes the Sabbath Friday evening to Saturday evening?",choices:["Judaism","Christianity","Islam","Sikhism"],answer:0},
-  {question:"The Holy Bible is primarily associated with which religion?",choices:["Christianity","Hinduism","Shinto","Jainism"],answer:0},
-  {question:"A gurdwara is a place of worship for?",choices:["Sikhism","Islam","Judaism","Buddhism"],answer:0}
+  {question:"Christianity's holy book is the:",choices:["Quran","Torah","Bible","Vedas"],answer:2},
+  {question:"Which religion celebrates Ramadan?",choices:["Islam","Judaism","Buddhism","Christianity"],answer:0},
+  {question:"Where do Jews worship?",choices:["Mosque","Synagogue","Church","Temple"],answer:1},
+  {question:"Who is the central figure of Christianity?",choices:["Moses","Jesus","Muhammad","Buddha"],answer:1},
+  {question:"Hinduism is mainly practiced in which country?",choices:["China","Japan","India","Brazil"],answer:2}
  ],
  "History":[
-  {question:"Year World War II ended?",choices:["1945","1939","1918","1963"],answer:0},
-  {question:"Egyptian writing system?",choices:["Cuneiform","Hieroglyphics","Runes","Kanji"],answer:1},
-  {question:"Roman leader assassinated in 44 BC?",choices:["Augustus","Julius Caesar","Nero","Hadrian"],answer:1},
-  {question:"The Great Wall is primarily in which country?",choices:["Japan","China","Mongolia","India"],answer:1},
-  {question:"The Renaissance emphasized?",choices:["Mysticism","Humanism","Nomadism","Capitalism"],answer:1}
+  {question:"Who was the first U.S. President?",choices:["Abraham Lincoln","Thomas Jefferson","George Washington","John Adams"],answer:2},
+  {question:"Which ship famously sank in 1912?",choices:["Mayflower","Titanic","Santa Maria","Victory"],answer:1},
+  {question:"Which ancient civilization built the pyramids?",choices:["Romans","Vikings","Egyptians","Greeks"],answer:2},
+  {question:"What year did World War II end?",choices:["1945","1980","1776","2001"],answer:0},
+  {question:"Who discovered electricity using a kite experiment?",choices:["Edison","Newton","Franklin","Einstein"],answer:2}
  ],
  "Politics":[
-  {question:"How many branches in the U.S. federal government?",choices:["Three","Two","Four","Five"],answer:0},
-  {question:"Which document begins with 'We the People'?",choices:["U.S. Constitution","Declaration of Independence","Bill of Rights","Federalist Papers"],answer:0},
-  {question:"Head of government in many parliamentary systems?",choices:["Prime Minister","President","Speaker","Chief Justice"],answer:0},
-  {question:"What term describes the right to vote?",choices:["Suffrage","Habeas Corpus","Filibuster","Gerrymander"],answer:0},
-  {question:"Organization of 190+ member states for international peace?",choices:["United Nations","NATO","European Union","OAS"],answer:0}
+  {question:"What is the leader of a city called?",choices:["President","Mayor","Judge","Captain"],answer:1},
+  {question:"How many branches of government does the U.S. have?",choices:["2","3","4","5"],answer:1},
+  {question:"Which political symbol is associated with the Republican Party?",choices:["Elephant","Donkey","Eagle","Lion"],answer:0},
+  {question:"Which document begins with \"We the People\"?",choices:["The Bible","The Constitution","The Dictionary","The Newspaper"],answer:1},
+  {question:"Where does the U.S. Congress meet?",choices:["White House","Capitol Building","Pentagon","Empire State Building"],answer:1}
  ],
  "Music":[
   {question:"Scale starting at C with no sharps/flats?",choices:["Chromatic","Minor","Pentatonic","Major"],answer:3},

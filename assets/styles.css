@@ -1,18 +1,23 @@
-*{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;margin:0;padding:0}
-body{background:#111;color:#f4f4f4;min-height:100vh;display:flex;flex-direction:column}
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--text:#f4f4f4;--panel:#111;--btn:#222;--btn-hover:#333}
+body{background:linear-gradient(-45deg,#1d2b64,#f8cdda,#1c92d2,#f2fcfe);background-size:400% 400%;animation:ambient 22s ease infinite;color:var(--text);min-height:100vh;display:flex;flex-direction:column;font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+@keyframes ambient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 header{text-align:center;padding:1.25rem 1rem}
 header h1{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:.25rem;background:linear-gradient(90deg,#ff8a00,#e52e71);-webkit-background-clip:text;color:transparent}
 header p{opacity:.85}
 .wheel-container{margin:auto;display:flex;flex-direction:column;align-items:center;gap:1rem;padding:1rem}
-.wheel{width:360px;height:360px;border-radius:50%;position:relative;box-shadow:0 0 0 6px #222,0 10px 25px -5px rgba(0,0,0,.6);overflow:hidden;transition:transform 6s cubic-bezier(.17,.67,.32,1.25)}
+.wheel{width:360px;height:360px;border-radius:50%;position:relative;box-shadow:0 0 0 6px rgba(0,0,0,.35),0 10px 25px -5px rgba(0,0,0,.6);overflow:hidden;transition:transform 6s cubic-bezier(.17,.67,.32,1.25);background:#fff}
+.wheel::before{content:'';position:absolute;top:-6px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:12px solid transparent;border-right:12px solid transparent;border-bottom:18px solid #fff;filter:drop-shadow(0 2px 2px rgba(0,0,0,.5));z-index:5}
 .wheel::after{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:90px;height:90px;background:#111;border:4px solid #fff;border-radius:50%;box-shadow:0 0 10px rgba(0,0,0,.6) inset}
 .controls{display:flex;gap:.75rem}
-button{cursor:pointer;border:none;padding:.75rem 1.2rem;font-size:1rem;border-radius:40px;background:#222;color:#fff;letter-spacing:.5px;transition:.25s;font-weight:600}
-button:hover{background:#333}
+button{cursor:pointer;border:none;padding:.75rem 1.2rem;font-size:1rem;border-radius:40px;background:var(--btn);color:#fff;letter-spacing:.5px;transition:.25s;font-weight:600}
+button:hover{background:var(--btn-hover)}
 button:active{transform:scale(.96)}
 .selected-genre{min-height:2rem;font-size:1.25rem;font-weight:600;margin-top:.5rem}
 .hidden{display:none !important}
-.segment-label{position:absolute;top:50%;left:50%;transform-origin:0 0;display:flex;align-items:center;justify-content:flex-start;font-size:1.1rem;font-weight:600;color:#111;text-shadow:0 1px 0 rgba(255,255,255,.4);width:50%;padding-left:8px}
+.segment-label{position:absolute;top:50%;left:50%;transform-origin:0 50%;display:flex;align-items:center;justify-content:center;text-align:center;font-size:1.15rem;font-weight:700;color:#111;text-shadow:0 1px 0 rgba(255,255,255,.4);width:calc(50% - 45px);padding:0}
+.genre-hero{margin-top:.5rem;display:flex;justify-content:center}
+.genre-hero img{max-width:600px;width:100%;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.15)}
 .quiz-container{max-width:800px;margin:auto;display:flex;flex-direction:column;gap:1.25rem;padding:1rem;width:100%}
 .question{font-size:1.3rem;font-weight:600;line-height:1.35}
 .answers{display:grid;gap:.75rem}
@@ -20,7 +25,9 @@ button:active{transform:scale(.96)}
 .answers button.correct{background:#1b5e20;border-color:#2e7d32}
 .answers button.incorrect{background:#641010;border-color:#8b1d1d}
 .next{align-self:flex-end}
-#progress{text-align:center;margin-top:-.5rem;margin-bottom:.5rem;font-weight:600}
+#progress{margin-top:-.25rem;margin-bottom:.25rem;font-weight:700}
+.top-stats{display:flex;gap:1rem;justify-content:center;align-items:center}
+#balance{font-weight:800}
 .results-container{margin:auto;text-align:center;display:flex;flex-direction:column;gap:1.25rem;padding:2rem}
 #scoreDisplay{font-size:2rem;font-weight:700}
 #playAgainBtn{align-self:center}

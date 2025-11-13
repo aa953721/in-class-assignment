@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffafbd"/>
+      <stop offset="100%" stop-color="#ffc3a0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <g fill="#fff">
+    <polygon points="280,260 520,260 520,240 510,240 510,210 520,210 520,190 280,190 280,210 290,210 290,240 280,240"/>
+    <rect x="260" y="270" width="280" height="12"/>
+  </g>
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="700">Politics</text>
+</svg>

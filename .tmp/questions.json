@@ -1,0 +1,704 @@
+﻿[
+    {
+        "genre":  "Celebrities",
+        "questions":  [
+                          {
+                              "question":  "Who played Iron Man in the Marvel movies?",
+                              "choices":  [
+                                              "Brad Pitt",
+                                              "Robert Downey Jr.",
+                                              "Tom Cruise",
+                                              "Chris Evans"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Who is known as the "€œKing of Pop"€?",
+                              "choices":  [
+                                              "Justin Bieber",
+                                              "Michael Jackson",
+                                              "Elvis Presley",
+                                              "Bruno Mars"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which singer released the song "€œShake It Off"€?",
+                              "choices":  [
+                                              "Ariana Grande",
+                                              "Taylor Swift",
+                                              "BeyoncÃ©",
+                                              "Selena Gomez"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which actor voiced Woody in Toy Story?",
+                              "choices":  [
+                                              "Tom Hanks",
+                                              "Ryan Gosling",
+                                              "Chris Pratt",
+                                              "Adam Sandler"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Who is famous for the "€œRock eyebrow raise"€?",
+                              "choices":  [
+                                              "Chris Hemsworth",
+                                              "The Rock (Dwayne Johnson)",
+                                              "Will Smith",
+                                              "Vin Diesel"
+                                          ],
+                              "answer":  1
+                          }
+                      ]
+    },
+    {
+        "genre":  "Food",
+        "questions":  [
+                          {
+                              "question":  "Sushi originally comes from which country?",
+                              "choices":  [
+                                              "China",
+                                              "Japan",
+                                              "Korea",
+                                              "India"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which fruit keeps the doctor away?",
+                              "choices":  [
+                                              "Orange",
+                                              "Grape",
+                                              "Apple",
+                                              "Banana"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "What food is commonly served at Thanksgiving?",
+                              "choices":  [
+                                              "Pizza",
+                                              "Turkey",
+                                              "Sushi",
+                                              "Tacos"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "What is guacamole mainly made from?",
+                              "choices":  [
+                                              "Tomato",
+                                              "Avocado",
+                                              "Lettuce",
+                                              "Cucumber"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which dessert is frozen and comes in many flavors?",
+                              "choices":  [
+                                              "Cake",
+                                              "Ice Cream",
+                                              "Pie",
+                                              "Donut"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "What type of food is cheddar?",
+                              "choices":  [
+                                              "Bread",
+                                              "Cheese",
+                                              "Fruit",
+                                              "Spice"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which food is typically orange?",
+                              "choices":  [
+                                              "Carrot",
+                                              "Grape",
+                                              "Bread",
+                                              "Potato"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which fast-food chain is known for the Big Mac?",
+                              "choices":  [
+                                              "Wendy"€™s",
+                                              "Burger King",
+                                              "McDonald"€™s",
+                                              "Taco Bell"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "Guacamole is commonly eaten with:",
+                              "choices":  [
+                                              "Pancakes",
+                                              "Tortilla chips",
+                                              "Yogurt",
+                                              "Pickles"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "What food is made from cocoa beans?",
+                              "choices":  [
+                                              "Chocolate",
+                                              "Cheese",
+                                              "Bread",
+                                              "Peanut butter"
+                                          ],
+                              "answer":  0
+                          }
+                      ]
+    },
+    {
+        "genre":  "Genres",
+        "questions":  [
+
+                      ]
+    },
+    {
+        "genre":  "History",
+        "questions":  [
+                          {
+                              "question":  "Who was the first U.S. President?",
+                              "choices":  [
+                                              "Abraham Lincoln",
+                                              "Thomas Jefferson",
+                                              "George Washington",
+                                              "John Adams"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "Which ship famously sank in 1912?",
+                              "choices":  [
+                                              "Mayflower",
+                                              "Titanic",
+                                              "Santa Maria",
+                                              "Victory"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which ancient civilization built the pyramids?",
+                              "choices":  [
+                                              "Romans",
+                                              "Vikings",
+                                              "Egyptians",
+                                              "Greeks"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "What year did World War II end?",
+                              "choices":  [
+                                              "1945",
+                                              "1980",
+                                              "1776",
+                                              "2001"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Who discovered electricity using a kite experiment?",
+                              "choices":  [
+                                              "Edison",
+                                              "Newton",
+                                              "Franklin",
+                                              "Einstein"
+                                          ],
+                              "answer":  2
+                          }
+                      ]
+    },
+    {
+        "genre":  "Holidays",
+        "questions":  [
+                          {
+                              "question":  "Which holiday involves decorating a tree?",
+                              "choices":  [
+                                              "Thanksgiving",
+                                              "Christmas",
+                                              "Easter",
+                                              "Halloween"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which holiday uses carved pumpkins?",
+                              "choices":  [
+                                              "Christmas",
+                                              "Halloween",
+                                              "New Year"€™s",
+                                              "Valentine"€™s Day"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which holiday celebrates the New Year?",
+                              "choices":  [
+                                              "July 4th",
+                                              "January 1st",
+                                              "March 17th",
+                                              "April 1st"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which day is known for fireworks in the U.S.?",
+                              "choices":  [
+                                              "Valentine"€™s Day",
+                                              "Easter",
+                                              "Fourth of July",
+                                              "Veterans Day"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "Which holiday involves egg hunts?",
+                              "choices":  [
+                                              "Easter",
+                                              "Christmas",
+                                              "Thanksgiving",
+                                              "Memorial Day"
+                                          ],
+                              "answer":  0
+                          }
+                      ]
+    },
+    {
+        "genre":  "Movies",
+        "questions":  [
+                          {
+                              "question":  "Which movie features a talking snowman named Olaf?",
+                              "choices":  [
+                                              "Shrek",
+                                              "Frozen",
+                                              "Moana",
+                                              "Tangled"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Who is the main villain in "€œThe Lion King"€?",
+                              "choices":  [
+                                              "Scar",
+                                              "Jafar",
+                                              "Hades",
+                                              "Thanos"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which movie includes superheroes teaming up?",
+                              "choices":  [
+                                              "The Avengers",
+                                              "Toy Story",
+                                              "Jaws",
+                                              "The Notebook"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "What color pill does Neo take in "€œThe Matrix"€?",
+                              "choices":  [
+                                              "Green",
+                                              "Blue",
+                                              "Red",
+                                              "Yellow"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "Which movie is about a sinking ship?",
+                              "choices":  [
+                                              "Titanic",
+                                              "Cars",
+                                              "Up",
+                                              "Inception"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which movie features a clown named Pennywise?",
+                              "choices":  [
+                                              "It",
+                                              "Saw",
+                                              "Us",
+                                              "Scream"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which movie has the line "€œTo infinity"€¦ and beyond!"€?",
+                              "choices":  [
+                                              "Frozen",
+                                              "Toy Story",
+                                              "Cars",
+                                              "Inside Out"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "What movie stars a giant gorilla on Skull Island?",
+                              "choices":  [
+                                              "Jurassic Park",
+                                              "King Kong",
+                                              "Godzilla",
+                                              "Tarzan"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Who is the main blue character in Avatar?",
+                              "choices":  [
+                                              "Neytiri",
+                                              "Moana",
+                                              "Mulan",
+                                              "Merida"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which movie is about time loops?",
+                              "choices":  [
+                                              "Groundhog Day",
+                                              "Titanic",
+                                              "Black Panther",
+                                              "John Wick"
+                                          ],
+                              "answer":  0
+                          }
+                      ]
+    },
+    {
+        "genre":  "Politics",
+        "questions":  [
+                          {
+                              "question":  "What is the leader of a city called?",
+                              "choices":  [
+                                              "President",
+                                              "Mayor",
+                                              "Judge",
+                                              "Captain"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "How many branches of government does the U.S. have?",
+                              "choices":  [
+                                              "2",
+                                              "3",
+                                              "4",
+                                              "5"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which political symbol is associated with the Republican Party?",
+                              "choices":  [
+                                              "Elephant",
+                                              "Donkey",
+                                              "Eagle",
+                                              "Lion"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which document begins with "€œWe the People"€?",
+                              "choices":  [
+                                              "The Bible",
+                                              "The Constitution",
+                                              "The Dictionary",
+                                              "The Newspaper"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Where does the U.S. Congress meet?",
+                              "choices":  [
+                                              "White House",
+                                              "Capitol Building",
+                                              "Pentagon",
+                                              "Empire State Building"
+                                          ],
+                              "answer":  1
+                          }
+                      ]
+    },
+    {
+        "genre":  "Religion",
+        "questions":  [
+                          {
+                              "question":  "Christianity"€™s holy book is the:",
+                              "choices":  [
+                                              "Quran",
+                                              "Torah",
+                                              "Bible",
+                                              "Vedas"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "Which religion celebrates Ramadan?",
+                              "choices":  [
+                                              "Islam",
+                                              "Judaism",
+                                              "Buddhism",
+                                              "Christianity"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Where do Jews worship?",
+                              "choices":  [
+                                              "Mosque",
+                                              "Synagogue",
+                                              "Church",
+                                              "Temple"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Who is the central figure of Christianity?",
+                              "choices":  [
+                                              "Moses",
+                                              "Jesus",
+                                              "Muhammad",
+                                              "Buddha"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Hinduism is mainly practiced in which country?",
+                              "choices":  [
+                                              "China",
+                                              "Japan",
+                                              "India",
+                                              "Brazil"
+                                          ],
+                              "answer":  2
+                          }
+                      ]
+    },
+    {
+        "genre":  "Sports",
+        "questions":  [
+                          {
+                              "question":  "How many players on a basketball team are on the court?",
+                              "choices":  [
+                                              "3",
+                                              "5",
+                                              "7",
+                                              "11"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which sport uses a bat and bases?",
+                              "choices":  [
+                                              "Soccer",
+                                              "Baseball",
+                                              "Basketball",
+                                              "Tennis"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "What sport does Lionel Messi play?",
+                              "choices":  [
+                                              "Basketball",
+                                              "Soccer",
+                                              "Football",
+                                              "Golf"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "The Super Bowl is part of which sport?",
+                              "choices":  [
+                                              "Baseball",
+                                              "Tennis",
+                                              "American Football",
+                                              "Hockey"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "Which sport uses a puck?",
+                              "choices":  [
+                                              "Baseball",
+                                              "Hockey",
+                                              "Soccer",
+                                              "Swimming"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which sport is played at Wimbledon?",
+                              "choices":  [
+                                              "Tennis",
+                                              "Soccer",
+                                              "Baseball",
+                                              "Hockey"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "What sport uses a hoop and backboard?",
+                              "choices":  [
+                                              "Volleyball",
+                                              "Basketball",
+                                              "Soccer",
+                                              "Golf"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which sport has quarterbacks and touchdowns?",
+                              "choices":  [
+                                              "Baseball",
+                                              "Hockey",
+                                              "Football",
+                                              "Soccer"
+                                          ],
+                              "answer":  2
+                          },
+                          {
+                              "question":  "The Olympics are held every:",
+                              "choices":  [
+                                              "2 years",
+                                              "4 years",
+                                              "5 years",
+                                              "8 years"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which sport uses the term "€œhome run"€?",
+                              "choices":  [
+                                              "Soccer",
+                                              "Baseball",
+                                              "Tennis",
+                                              "Golf"
+                                          ],
+                              "answer":  1
+                          }
+                      ]
+    },
+    {
+        "genre":  "Tv shows",
+        "questions":  [
+                          {
+                              "question":  "Which TV show features characters working at Dunder Mifflin?",
+                              "choices":  [
+                                              "Friends",
+                                              "The Office",
+                                              "Brooklyn 99",
+                                              "Parks and Rec"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Who is the main character in "€œStranger Things"€?",
+                              "choices":  [
+                                              "Eleven",
+                                              "Katniss",
+                                              "Hermione",
+                                              "Rey"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which show is animated?",
+                              "choices":  [
+                                              "Breaking Bad",
+                                              "The Simpsons",
+                                              "Lost",
+                                              "The Crown"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "What show is known for the phrase "€œWinter is coming"€?",
+                              "choices":  [
+                                              "The Witcher",
+                                              "Game of Thrones",
+                                              "Loki",
+                                              "Manifest"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which show is about a chemistry teacher turned criminal?",
+                              "choices":  [
+                                              "The Boys",
+                                              "Breaking Bad",
+                                              "Suits",
+                                              "The Flash"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which show features a group of scientists and their neighbor Penny?",
+                              "choices":  [
+                                              "Community",
+                                              "The Big Bang Theory",
+                                              "Friends",
+                                              "Lost"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which show is about a teenage girl who hunts vampires?",
+                              "choices":  [
+                                              "Supernatural",
+                                              "Buffy the Vampire Slayer",
+                                              "Charmed",
+                                              "Teen Wolf"
+                                          ],
+                              "answer":  1
+                          },
+                          {
+                              "question":  "Which TV show has characters named Ross, Rachel, Chandler, Monica, Joey, and Phoebe?",
+                              "choices":  [
+                                              "Friends",
+                                              "The Office",
+                                              "New Girl",
+                                              "Seinfeld"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "What show features contestants surviving on an island?",
+                              "choices":  [
+                                              "Survivor",
+                                              "Big Brother",
+                                              "The Voice",
+                                              "Idol"
+                                          ],
+                              "answer":  0
+                          },
+                          {
+                              "question":  "Which show features a bounty hunter named Din Djarin?",
+                              "choices":  [
+                                              "Loki",
+                                              "The Mandalorian",
+                                              "Andor",
+                                              "The Witcher"
+                                          ],
+                              "answer":  1
+                          }
+                      ]
+    }
+]
+

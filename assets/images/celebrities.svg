@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fc5c7d"/>
+      <stop offset="100%" stop-color="#6a82fb"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g)"/>
+  <g fill="#fff">
+    <polygon points="400,120 418,168 470,168 428,198 444,246 400,218 356,246 372,198 330,168 382,168"/>
+  </g>
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" fill="#ffffff" font-family="Poppins, Arial, sans-serif" font-size="40" font-weight="700">Celebrities</text>
+</svg>
