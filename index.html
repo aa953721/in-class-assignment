@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Genre Spin Quiz</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Genre Spin Quiz</h1>
+    <p>Spin the wheel to pick a genre and start the trivia!</p>
+  </header>
+
+  <main class="wheel-container">
+    <div id="wheel" class="wheel"></div>
+    <div class="controls">
+      <button id="spinBtn">Spin Wheel</button>
+    </div>
+    <div id="selectedGenre" class="selected-genre" aria-live="polite"></div>
+    <button id="startQuizBtn" class="hidden">Start Quiz</button>
+  </main>
+
+  <script src="assets/wheel.js"></script>
+</body>
+</html>
